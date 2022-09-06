@@ -1,0 +1,82 @@
+
+
+body {
+  margin: 0;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  overflow-y: hidden;
+}
+
+.night {
+  height: 100vh;
+  width: 100%;
+  margin: 5rem auto;
+  background: url("img1.jpg");
+  background-size: cover;
+  position: relative;
+  box-shadow: 1px 2px 60px rgba(0, 0, 0, 4);
+  overflow-x: hidden;
+}
+
+.bg2 {
+  background-image: url("img2.png");
+  width: 100%;
+  height: 267px;
+  display: block;
+  position: absolute;
+  bottom: 11%;
+  left: 0%;
+  background-repeat: repeat-x;
+}
+
+.surface {
+  width: 10000px;
+  height: 154px;
+  background: url("img3.jpg");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+  animation: moveRight 9s linear;
+}
+
+.car {
+  position: absolute;
+  bottom: 8%;
+  left: 12%;
+  animation: suspension 1s linear infinite;
+}
+
+/* animation */
+
+@keyframes moveRight {
+  100%{transform: translateX(-2950px)};
+}
+
+@keyframes suspension {
+  100%{
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  0% {
+    transform: translateY(-1px);
+  }
+}
+
+.baloon {
+  position: absolute;
+  top: 250px;
+  right: 40px;
+  width: 700px;
+  animation: balon 5s linear infinite;
+}
+
+@keyframes balon {
+  100%{transform: translateX(-200px)};
+}
+
+
+
+
